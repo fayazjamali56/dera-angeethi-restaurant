@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dera Angeethi | Charcoal BBQ &amp; Karahi in Lahore</title>
+  <meta name="description" content="Dera Angeethi serves charcoal-grilled BBQ, wood-fired karahi and fresh naan in Lahore. View the menu and reserve a table.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rozha+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#menu">Skip to menu</a>
+
+  <header class="nav" id="top">
+    <a class="logo" href="#top">Dera Angeethi</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="links">Menu</button>
+    <nav id="links" class="links">
+      <a href="#menu">Menu</a>
+      <a href="#about">Our story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit" class="btn btn-small">Reserve a table</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Fire first.<br>Everything else follows.</h1>
+        <p>Charcoal-grilled tikka, wood-fired karahi and naan pulled hot from the tandoor. Open every day from 12 pm to midnight.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn">See the menu</a>
+          <a href="#visit" class="btn btn-ghost">Reserve a table</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="wrap">
+        <h2>The menu</h2>
+        <p class="lead">Prices in PKR. Ask your server about today's fresh catch and seasonal specials.</p>
+        <div class="tabs" role="tablist" id="tabs"></div>
+        <ul class="menu-list" id="menu-list"></ul>
+      </div>
+    </section>
+
+    <section class="section dark" id="about">
+      <div class="wrap about">
+        <div>
+          <h2>Cooked the way my father cooked</h2>
+          <p>Dera Angeethi started as a roadside coal stove on Lahore's Ferozepur Road in 2009. Today we still grill over real charcoal, marinate for 24 hours and make our masalas in-house each week.</p>
+          <p>No shortcuts, no artificial colour. Just good meat, hot coals and people who care how it tastes.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>2009</dt><dd>First stove lit</dd></div>
+          <div><dt>24 hrs</dt><dd>Every marinade rests</dd></div>
+          <div><dt>100%</dt><dd>Halal, charcoal-grilled</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="wrap">
+        <h2>From our kitchen</h2>
+        <div class="grid">
+          <img src="images/gallery-1.jpg" alt="Chicken tikka skewers over glowing charcoal" loading="lazy">
+          <img src="images/gallery-2.jpg" alt="Mutton karahi served in a steel pot" loading="lazy">
+          <img src="images/gallery-3.jpg" alt="Naan being slapped onto a tandoor wall" loading="lazy">
+          <img src="images/gallery-4.jpg" alt="Dining room with warm lighting" loading="lazy">
+          <img src="images/gallery-5.jpg" alt="Seekh kebabs with chutney and salad" loading="lazy">
+          <img src="images/gallery-6.jpg" alt="Kulfi and doodh patti chai" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section tint" id="reviews">
+      <div class="wrap">
+        <h2>What guests say</h2>
+        <div class="reviews">
+          <blockquote><p>The mutton karahi is the best I have had in Lahore. Spicy, smoky and the naan arrives hot.</p><cite>Hamza R., Gulberg</cite></blockquote>
+          <blockquote><p>We booked for a family of eight and everything came out together. Staff were patient with the kids.</p><cite>Ayesha K., DHA</cite></blockquote>
+          <blockquote><p>Seekh kebabs have real charcoal flavour. Order the kulfi, you will not regret it.</p><cite>Bilal M., Model Town</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="visit">
+      <div class="wrap visit">
+        <div>
+          <h2>Visit us</h2>
+          <p><strong>Address</strong><br>45 Main Boulevard, Gulberg III, Lahore</p>
+          <p><strong>Hours</strong><br>Every day, 12 pm to 12 am</p>
+          <p><strong>Phone</strong><br><a href="tel:+920000000000">+92 000 0000000</a></p>
+          <iframe title="Map showing Gulberg III, Lahore" loading="lazy"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=74.33%2C31.50%2C74.37%2C31.53&amp;layer=mapnik"></iframe>
+        </div>
+        <form id="reserve" novalidate>
+          <h3>Reserve a table</h3>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <span class="err" id="err-name"></span>
+
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="03XX XXXXXXX" required>
+          <span class="err" id="err-phone"></span>
+
+          <div class="row">
+            <div>
+              <label for="date">Date</label>
+              <input id="date" name="date" type="date" required>
+              <span class="err" id="err-date"></span>
+            </div>
+            <div>
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests">
+                <option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>8</option><option>10+</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn" type="submit">Request reservation</button>
+          <p class="status" id="status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Dera Angeethi. A fictional restaurant created as a portfolio project. Photos from Unsplash.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
